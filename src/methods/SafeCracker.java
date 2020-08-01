@@ -12,13 +12,19 @@ import javax.swing.JApplet;
 import javax.swing.JOptionPane;
 
 public class SafeCracker {
+	
+	
 
 	public static void main(String[] args) {
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */
-		
+		for (int i=1; i < 100; i++) {
+		Random ran = new Random();
+		int random = ran.nextInt(10000000);
+		tryCode(9999999 - i);
+		}
 
 	}
 
